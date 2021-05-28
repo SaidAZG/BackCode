@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>Pruebas DB</title>
+    <script language="JavaScript" type="text/javascript">
+      //Iniciar conexion a la base
+      alert("Inicia la Conexion");
+
+      //Metodos de los elementos en la pagina
+      function actualizarP(){
+        //Busqueda en la base
+
+        //Insertar Campo en HTML
+        color = document.getElementById('color').value;
+        document.getElementById('precio').innerHTML = "Precio para "+color;
+      }
+
+      function llamar(campo) {
+        //Busqueda en la base
+
+        //Insertar Campo en el HTML
+        document.getElementById(campo).innerHTML = campo;
+        //alert(campo);
+        return true;
+      }
+    </script>
+    </script>
+  </head>
+  <body link="indes.js">
+    <select id="color" onchange="actualizarP()">
+      <option>Verde</option>
+      <option>Azul</option>
+      <option>Rojo</option>
+    </select>
+    <p id="precio">...</p>
+    <hr/>
+    <p id="correo">...</p>
+    <input type="button" value="Solicitar Correo" onclick="llamar('correo')"/>
+    <p id="clave">...</p>
+    <input type="button" value="Solicitar Clave" onclick="llamar('clave')"/>
+  </body>
+</html>
