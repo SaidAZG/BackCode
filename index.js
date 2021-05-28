@@ -21,7 +21,7 @@ const getUser = async () => {
   }
   //console.log("Obtieniendo usuario");
 };
-getUser();
+//getUser();
 
 const insertUser = async () => {
   //manera para ahorrar concatenaciones
@@ -72,4 +72,4 @@ const getCountOf = async () => {
   }
   //console.log("Obtieniendo usuario");
 };
-getCountOf();
+//getCountOf();
