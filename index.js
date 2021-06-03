@@ -1,5 +1,6 @@
-console.log("Hola Mundo");
-const { Pool } = require("pg");
+alert("Hola Mundo");
+
+import { Pool } from "/node_modules/pg";
 const config = {
   user: "postgres",
   host: "localhost",
@@ -66,7 +67,7 @@ const getCountOf = async () => {
     var myJSON = JSON.stringify(res.rows[0]["count"]);
     console.log("Resultado de cuenta:" + myJSON);
 
-    pool.end();
+    //pool.end();
   } catch (e) {
     console.log(e);
   }
